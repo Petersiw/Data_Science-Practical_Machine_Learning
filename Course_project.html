@@ -378,6 +378,7 @@ stack.df.va &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<sp
 ## Detection Rate         0.2836   0.1908   0.1725   0.1619   0.1818
 ## Detection Prevalence   0.2845   0.1935   0.1743   0.1638   0.1839
 ## Balanced Accuracy      0.9950   0.9930   0.9916   0.9932   0.9978</code></pre>
+<p>As can be seen from prediction with validation data, the accuracy of the stacked model is 99%. Therefore the expected out-of-sample error is around 1%.</p>
 </div>
 </div>
 <div id="prediction-with-testing-dataset" class="section level2">
@@ -407,7 +408,7 @@ pred &lt;-<span class="st"> </span><span class="kw">predict</span>(comb.fit1, st
 </div>
 <div id="conclusion" class="section level2">
 <h2>Conclusion</h2>
-<p>In short, all the models works very well in predicting the different types of movements made by the subjects, each with an accuracy greater than 95%. If the sample where these algorithms is applied is somewhat similar to this dataset, i.e., no real outliers or no false entry, the out-of-sample error should be rather low, perhaps at around 5% or less.</p>
+<p>In short, all the models works very well in predicting the different types of movements made by the subjects, each with an accuracy greater than 95%. Prediction with validation data using the stacked model showed that out-of-sample error rate is around 1%.</p>
 </div>
 
 

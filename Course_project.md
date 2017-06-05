@@ -284,6 +284,8 @@ confusionMatrix(stack.df.va$classe, predict(comb.fit1, stack.df.va))
 ## Balanced Accuracy      0.9950   0.9930   0.9916   0.9932   0.9978
 ```
 
+As can be seen from prediction with validation data, the accuracy of the stacked model is 99%. Therefore the expected out-of-sample error is around 1%.
+
 ##Prediction With Testing Dataset
 
 ###Download and Load Data
@@ -321,4 +323,4 @@ registerDoSEQ()
 
 ##Conclusion
 
-In short, all the models works very well in predicting the different types of movements made by the subjects, each with an accuracy greater than 95%. If the sample where these algorithms is applied is somewhat similar to this dataset, i.e., no real outliers or no false entry, the out-of-sample error should be rather low, perhaps at around 5% or less. 
+In short, all the models works very well in predicting the different types of movements made by the subjects, each with an accuracy greater than 95%. Prediction with validation data using the stacked model showed that out-of-sample error rate is around 1%.
